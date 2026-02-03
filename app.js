@@ -15,11 +15,18 @@
 
 // }
 
-function square(number) {
-  console.log('value of the number parameter', number);
-  const borgo = number * number;
-  console.log('sqare of the given number is:', borgo);
-  return borgo;
+// function square(number) {
+//   console.log('value of the number parameter', number);
+//   const borgo = number * number;
+//   console.log('sqare of the given number is:', borgo);
+//   return borgo;
+// }
+// let sqarenumbers = square(12);
+// console.log(sqarenumbers);
+
+
+function totalNumber(a,b) {
+  return a + b;
 }
-let sqarenumbers = square(12);
-console.log(sqarenumbers);
+let tNum = totalNumber(5,5);
+console.log(tNum);
