@@ -25,8 +25,74 @@
 // console.log(sqarenumbers);
 
 
-function totalNumber(a,b) {
+// function totalNumber(a,b) {
+//   return a + b;
+// }
+// let tNum = totalNumber(5,5);
+// console.log(tNum);
+
+function sumOfnumbers(number) {
+  let sum = 0;
+  for (const number of numbers) {
+      console.log(number);
+  return sum;
+  };
+
+
+}
+const numbs = [54, 62, 12, 6];
+const sum = sumOfnumbers(numbs);
+console.log(`sum of number is:` sum);
+
+
+function add(a, b) {
   return a + b;
 }
-let tNum = totalNumber(5,5);
-console.log(tNum);
+
+function subtract(a, b) {
+  return a - b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function divide(a, b) {
+  return a / b;
+}
+
+function remainder(a, b) {
+  return a % b;
+}
+
+function power(a, b) {
+  return a ** b;
+}
+
+function maxOfTwo(a, b) {
+  return a > b ? a : b;
+}
+
+function minOfTwo(a, b) {
+  return a < b ? a : b;
+}
+
+function average(a, b) {
+  return (a + b) / 2;
+}
+
+function difference(a, b) {
+  return Math.abs(a - b);
+}
+
+console.log(add(5, 5));
+console.log(subtract(10, 3));
+console.log(multiply(4, 6));
+console.log(divide(20, 4));
+console.log(remainder(17, 5));
+console.log(power(2, 8));
+console.log(maxOfTwo(9, 12));
+console.log(minOfTwo(9, 12));
+console.log(average(7, 13));
+console.log(difference(50, 18));
+
