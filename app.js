@@ -164,7 +164,7 @@
 // // next
 
 // what is function
-const number = 11;
+// const number = 11;
 // function fanOffkoro(a) {
 //   if (a % 2===0) {
 //     return "Click the switch off";
@@ -177,9 +177,20 @@ const number = 11;
 // console.log(fanOffkoro(number));
 
 // const number = 11;
-function fanOffkoro() {
+// function fanOffkoro() {
 
-    return 'Click the switch off';
+//     return 'Click the switch off';
 
-}
-console.log(fanOffkoro());
+// }
+// console.log(fanOffkoro());
+
+
+// function sum(a,b){
+//   const result = a + b;
+//   return result;
+
+// }
+// const newTotal = sum(2,3);
+
+// console.log(newTotal);
+// i have learnt return is a very imporatant thing in function.Sometimes we may use it ,some time we wont!!
