@@ -108,15 +108,39 @@
 
 // For this object below add a property named passenger capacity with value 5
 
-const car = {
-  // unique case "3make": "Toyota",
-  '3make': 'Toyota',
-  model: 'Corolla',
-  year: 2020,
-};
-car["passenger capacity"] = 5;
+// const car = {
+//   // unique case "3make": "Toyota",
+//   '3make': 'Toyota',
+//   model: 'Corolla',
+//   year: 2020,
+// };
+// car["passenger capacity"] = 5;
 
-console.log(car);
-console.log(car["3make"]);
+// console.log(car);
+// console.log(car["3make"]);
 
 // when you want to add a key that is string ,u cannot do that using dot Notification.u will have to always use"object['string']"
+
+
+// Task-3
+// Display the physics marks as output.
+// const student = {
+//   name: 'Hamim Sakep',
+//   id: 5421,
+//   physics: {
+//     subject: 'HSC Physics',
+//     author: 'Shahjahan Tapan',
+//     marks: 30,
+//   },
+// };
+
+
+// Task-4
+// Count the number of properties.
+// let student = {
+//   name: 'Ariana Grande',
+//   age: 21,
+//   city: 'Gaibandha',
+//   isStudent: true,
+// };
+// console.log(Object.keys(student).length);
