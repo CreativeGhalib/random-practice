@@ -165,13 +165,21 @@
 
 // what is function
 const number = 11;
-function fanOffkoro(a) {
-  if (a % 2===0) {
-    return "Click the switch off";
-  }
-  else {
-    return('pore off korbo');
-  }
+// function fanOffkoro(a) {
+//   if (a % 2===0) {
+//     return "Click the switch off";
+//   }
+//   else {
+//     return('pore off korbo');
+//   }
+
+// }
+// console.log(fanOffkoro(number));
+
+// const number = 11;
+function fanOffkoro() {
+
+    return 'Click the switch off';
 
 }
-console.log(fanOffkoro(number));
+console.log(fanOffkoro());
