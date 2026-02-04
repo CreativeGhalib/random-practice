@@ -97,11 +97,26 @@
 // console.log(difference(50, 18));
 
 
-const colors = {
-  red: '#ff0000',
-  green: '#00ff00',
-  blue: '#0000ff',
-  'golden rod': '#daa520',
+// const colors = {
+//   red: '#ff0000',
+//   green: '#00ff00',
+//   blue: '#0000ff',
+//   'golden rod': '#daa520',
+// };
+// const outputValue=colors["golden rod"]
+// console.log(outputValue);
+
+// For this object below add a property named passenger capacity with value 5
+
+const car = {
+  // unique case "3make": "Toyota",
+  '3make': 'Toyota',
+  model: 'Corolla',
+  year: 2020,
 };
-const outputValue=colors["golden rod"]
-console.log(outputValue);
+car["passenger capacity"] = 5;
+
+console.log(car);
+console.log(car["3make"]);
+
+// when you want to add a key that is string ,u cannot do that using dot Notification.u will have to always use"object['string']"
