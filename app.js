@@ -161,3 +161,4 @@ for (key in myObject) {
   console.log(key);
   console.log(key, myObject[key],typeof myObject[key]);
 }
+// next
