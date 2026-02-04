@@ -194,3 +194,19 @@
 
 // console.log(newTotal);
 // i have learnt return is a very imporatant thing in function.Sometimes we may use it ,some time we wont!!
+
+
+
+// find ou the square!!
+
+// function sqr(i) {
+//   const result = i * i;
+//   console.log(result);
+
+// }
+// sqr(4);
+// function addLl(a, b) {
+//   const total = a + b;
+//   console.log(total);
+// }
+// addLl(1,2 )
