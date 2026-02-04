@@ -150,15 +150,28 @@
 
 // Input:
 
-let myObject = {
+// let myObject = {
 
-name: 'John Doe',
-age: 25,
-city: 'Example City',
-isStudent: true
-};
-for (key in myObject) {
-  console.log(key);
-  console.log(key, myObject[key],typeof myObject[key]);
+// name: 'John Doe',
+// age: 25,
+// city: 'Example City',
+// isStudent: true
+// };
+// for (key in myObject) {
+//   console.log(key);
+//   console.log(key, myObject[key],typeof myObject[key]);
+// }
+// // next
+
+// what is function
+const number = 11;
+function fanOffkoro(a) {
+  if (a % 2===0) {
+    return "Click the switch off";
+  }
+  else {
+    return('pore off korbo');
+  }
+
 }
-// next
+console.log(fanOffkoro(number));
