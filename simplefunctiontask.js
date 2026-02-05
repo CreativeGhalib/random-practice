@@ -49,13 +49,69 @@
 // }
 
 
-function count_zero(binaryString) {
-  let count = 0;
-  for (const number of binaryString) {
-    if (number === '0') {
-      count++;
-    }
-  }
-  return count;
-}
-console.log(count_zero('100010010'));
+// function count_zero(binaryString) {
+//   let count = 0;
+//   for (const number of binaryString) {
+//     if (number === '0') {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(count_zero('100010010'));
+
+
+// Task-4
+// Write a function called count_zero() which will take a binary string(Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in thfnc
+
+
+// function count_zero(binaryString) {
+//   let count = 0;
+//   for (const number of binaryString) {
+//     if (number === "0") {
+//       count++;
+//     }
+//   }
+//   return count;
+
+// }
+// console.log(count_zero("0100101"));
+// Task-5
+// Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return Even. If odd return Odd
+
+// let x = 2.23;
+// console.log(Number.isInteger(x));
+
+
+// function odd_even(integerValue) {
+//   if (integerValue % 2 === 0) {
+//     return "even number"
+//   }
+//   else if (integerValue % 2 !== 0) {
+//     return "odd number"
+//   }
+//   else {
+//     return "Invalid Number"
+//   }
+
+// }
+//   const result = odd_even(2.3);
+// console.log(result);
+
+// function odd_even(integerValue) {
+//   if (typeof integerValue !== "number" || !Number.isInteger(integerValue)) {
+//     return "Invalid Number";
+//   }
+
+//   if (integerValue % 2 === 0) {
+//     return "Even"; // চাইলে "even number"
+//   } else if (integerValue % 2 !== 0) {
+//     return "Odd"; // চাইলে "odd number"
+//   } else {
+//     return "Invalid Number";
+//   }
+// }
+
+// const result = odd_even(2.3);
+// console.log(result); // I
+// nvalid Number
