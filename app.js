@@ -210,3 +210,12 @@
 //   console.log(total);
 // }
 // addLl(1,2 )
+
+// Task-1
+// Take four parameters. Multiply the four numbers and then return the result
+function multiplyAll(a,b,c,d) {
+  const multipliedValue = a * b * c * d;
+  return multipliedValue
+}
+const result = multiplyAll(1, 2, 3, 4)
+console.log(result);
