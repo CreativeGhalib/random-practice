@@ -115,3 +115,21 @@
 // const result = odd_even(2.3);
 // console.log(result); // I
 // nvalid Number
+let studentInfo = {
+  name: 'ghalib',
+  age: 25,
+  city:'dhaka'
+}
+let result = Object.entries(studentInfo);
+console.log(result);
+// function obejectToarray(studentInfo) {
+
+//   for (const info in studentInfo) {
+//     const key = info;
+//     return key;
+
+// }
+
+// }
+//  const result = obejectToarray(studentInfo);
+//  console.log(result, Object.key(studentInfo))
