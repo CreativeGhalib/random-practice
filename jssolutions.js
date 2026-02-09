@@ -1,6 +1,6 @@
 // 🔢 A. Math & Basic Logic (1–8)
 
-// একটি সংখ্যা even না odd চেক করো
+
 
 
 // একটি সংখ্যা positive, negative না zero চেক করো
@@ -33,8 +33,16 @@
 
 
 // দুটি সংখ্যার বিয়োগ, গুণ ও ভাগ বের করো
-const ultimateMath = (x, y) => {
-return `subtraction=${x-y} multiplication=${x*y} division=${x/y}`
+// const ultimateMath = (x, y) => {
+// return `subtraction=${x-y} multiplication=${x*y} division=${x/y}`
+// }
+// const result = ultimateMath(12, 8);
+// console.log(result)
+
+// একটি সংখ্যা even না odd চেক করো
+const oddOreven = (int) => {
+  if (!Number.isInteger(int)) return 'Invalid Number';
+  return int % 2 === 0 ? "Even Number" : "Odd Number";
 }
-const result = ultimateMath(12, 8);
+const result = oddOreven(1);
 console.log(result)
