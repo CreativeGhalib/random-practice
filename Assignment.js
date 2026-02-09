@@ -36,6 +36,7 @@ function validOtp(otp) {
 }
 
 // Problem-03: BCS Final Score Calculator
+// Problem-03: BCS Final Score Calculator
 function finalScore(exam) {
   if (typeof exam !== 'object' || exam === null || Array.isArray(exam)) {
     return 'Invalid';
@@ -60,6 +61,7 @@ function finalScore(exam) {
   let score = exam.right - exam.wrong * 0.5;
   return Math.round(score);
 }
+
 
 // Problem-04: Upcoming Gono Vote
 function gonoVote(array) {
