@@ -249,20 +249,41 @@
 
 // ?task2
 
-function validOtp(otp) {
-  if (typeof otp !== "string" ) {
-    return "Invalid";
-  }
-  if (otp.length!==8) {
-    return false;
-  }
-  if (!otp.startsWith("ph-")) {
-    return false
-  }
+// function validOtp(otp) {
+//   if (typeof otp !== "string" ) {
+//     return "Invalid";
+//   }
+//   if (otp.length!==8) {
+//     return false;
+//   }
+//   if (!otp.startsWith("ph-")) {
+//     return false
+//   }
 
-  return true
+//   return true
 
+// }
+// let otp="ph-123458"
+// const result = validOtp(otp);
+// console.log(result);
+
+
+
+function finalScore(user) {
+  if (typeof user !== "object" || user === null || Array.isArray(user)) {
+    return 'Invalid'
+  }
+  if (user.right + user.wrong + user.skip !== 100) {
+    return "Invalid"
+  }
+  let score = user.right - (user.wrong * .5);
+  return Math.round(score);
 }
-let otp="ph-123458"
-const result = validOtp(otp);
+
+const user = {
+  right: 60,
+  wrong: 30,
+  skip: 10,
+};
+const result=finalScore(user)
 console.log(result);
