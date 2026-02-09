@@ -288,22 +288,53 @@
 // const result=finalScore(user)
 // console.log(result);
 
-function gonoVote(arr) {
-  if (!Array.isArray(arr)) return "Invalid";
-  let yesVote = 0;
-  let noVote = 0;
-  for (const vote of arr) {
+// function gonoVote(arr) {
+//   if (!Array.isArray(arr)) return "Invalid";
+//   let yesVote = 0;
+//   let noVote = 0;
+//   for (const vote of arr) {
 
-    if (vote === "ha")
-      yesVote++
-    else if (vote === 'na') noVote++;
+//     if (vote === "ha")
+//       yesVote++
+//     else if (vote === 'na') noVote++;
 
+//   }
+//   if (yesVote > noVote) return true;
+//   if (yesVote === noVote) return 'equa
+l';
+//   return false;
+
+
+// }
+// const arr = gonoVote(["ha","na","ha","na"])
+// console.log(arr);
+
+function analyzeText(str) {
+  if (typeof str !== 'string') {
+    return 'Invalid';
   }
-  if (yesVote > noVote) return true;
-  if (yesVote === noVote) return 'equal';
-  return false;
 
+  if (str.trim().length === 0) {
+    return 'Invalid';
+  }
 
+  let words = str.split(' ');
+  let longestWord = '';
+  let token = 0;
+
+  for (let i = 0; i < words.length; i++) {
+    let w = words[i];
+
+    if (w.length > 0) {
+      token = token + w.length;
+
+      if (w.length > longestWord.length) {
+        longestWord = w;
+      }
+    }
+  }
+  return {
+    longwords: longestWord,
+    token: token,
+  };
 }
-const arr = gonoVote(["ha","na","ha","na"])
-console.log(arr);
