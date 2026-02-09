@@ -223,24 +223,46 @@
 
 
 
-function newPrice(currentPrice, discount) {
-  if (
-    typeof currentPrice === 'string' ||
-    typeof discount === 'string' ||
-    !Number.isFinite(currentPrice) ||
-    !Number.isFinite(discount)
-  ) {
-    return 'Invalid';
-  }
-  if (100 < discount < 0) {
+// function newPrice(currentPrice, discount) {
+//   if (
+//     typeof currentPrice === 'string' ||
+//     typeof discount === 'string' ||
+//     !Number.isFinite(currentPrice) ||
+//     !Number.isFinite(discount)
+//   ) {
+//     return 'Invalid';
+//   }
+//   if (100 < discount < 0) {
+//     return "Invalid";
+//   }
+//   let discountAmount = (currentPrice * discount) / 100;
+//   let finalPrice = currentPrice - discountAmount;
+//   return finalPrice.toFixed(3);
+
+// }
+// const currentPrice = 1500;
+// const discount = 20;
+// const discountedPrice = newPrice(currentPrice, discount);
+// console.log(`After a ${discount}% discount, your payable amount is ${discountedPrice} BDT.`);
+
+
+
+// ?task2
+
+function validOtp(otp) {
+  if (typeof otp !== "string" ) {
     return "Invalid";
   }
-  let discountAmount = (currentPrice * discount) / 100;
-  let finalPrice = currentPrice - discountAmount;
-  return finalPrice.toFixed(3);
+  if (otp.length!==8) {
+    return false;
+  }
+  if (!otp.startsWith("ph-")) {
+    return false
+  }
+
+  return true
 
 }
-const currentPrice = 1500;
-const discount = 20;
-const discountedPrice = newPrice(currentPrice, discount);
-console.log(`discounted Price will be after ${discount}% deduction ,payable amount will be ${discountedPrice} bdt only`);
+let otp="ph-123458"
+const result = validOtp(otp);
+console.log(result);
