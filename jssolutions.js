@@ -46,3 +46,15 @@ const oddOreven = (int) => {
 }
 const result = oddOreven(1);
 console.log(result)
+
+
+// একটি সংখ্যা positive, negative না zero চেক করো
+const numberType = (value) => {
+  const num = typeof value === "string" ? Number(value) : value;
+  if (typeof num !== "number" || !Number.isFinite(num)) return "Invalid";
+  if (num < 0) return "Negative Number";
+  if (num > 0) return "Positive Number";
+  return "Zero";
+};
+
+console.log(numberType("-13")); // Negative Number
