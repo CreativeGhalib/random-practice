@@ -269,21 +269,41 @@
 
 
 
-function finalScore(user) {
-  if (typeof user !== "object" || user === null || Array.isArray(user)) {
-    return 'Invalid'
-  }
-  if (user.right + user.wrong + user.skip !== 100) {
-    return "Invalid"
-  }
-  let score = user.right - (user.wrong * .5);
-  return Math.round(score);
-}
+// function finalScore(user) {
+//   if (typeof user !== "object" || user === null || Array.isArray(user)) {
+//     return 'Invalid'
+//   }
+//   if (user.right + user.wrong + user.skip !== 100) {
+//     return "Invalid"
+//   }
+//   let score = user.right - (user.wrong * .5);
+//   return Math.round(score);
+// }
 
-const user = {
-  right: 60,
-  wrong: 30,
-  skip: 10,
-};
-const result=finalScore(user)
-console.log(result);
+// const user = {
+//   right: 60,
+//   wrong: 30,
+//   skip: 10,
+// };
+// const result=finalScore(user)
+// console.log(result);
+
+function gonoVote(arr) {
+  if (!Array.isArray(arr)) return "Invalid";
+  let yesVote = 0;
+  let noVote = 0;
+  for (const vote of arr) {
+
+    if (vote === "ha")
+      yesVote++
+    else if (vote === 'na') noVote++;
+
+  }
+  if (yesVote > noVote) return true;
+  if (yesVote === noVote) return 'equal';
+  return false;
+
+
+}
+const arr = gonoVote(["ha","na","ha","na"])
+console.log(arr);
