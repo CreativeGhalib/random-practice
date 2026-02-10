@@ -75,9 +75,31 @@
 // console.log(result);
 
 // দুটি সংখ্যা যোগ করার একটি প্রোগ্রাম লেখো
-const sum = (num1, num2) => {
-  if (typeof num1 !== 'number' || typeof num2 !== 'number' || !Number.isFinite(num1) || !Number.isFinite(num2)) return "Invalid"
-    return num1 + num2;
-}
-const result = sum(12, 14);
-console.log(result)
+// const sum = (num1, num2) => {
+//   if (typeof num1 !== 'number' || typeof num2 !== 'number' || !Number.isFinite(num1) || !Number.isFinite(num2)) return "Invalid"
+//     return num1 + num2;
+// }
+// const result = sum(12, 14);
+// console.log(result)
+
+
+
+
+// 📦 B. Variable & Data Type (9–13)
+// let, const, var দিয়ে একই ভ্যারিয়েবল declare করে পার্থক্য দেখাও
+
+
+// একটি ভ্যারিয়েবলের type চেক করো (typeof)
+
+
+// string কে number এ convert করো
+
+
+// number কে string এ convert করো
+
+
+// NaN কিভাবে তৈরি হয় তার উদাহরণ দেখাও
+
+
+
+
