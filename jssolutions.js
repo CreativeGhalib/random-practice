@@ -1,11 +1,5 @@
 // 🔢 A. Math & Basic Logic (1–8)
 
-
-
-
-// একটি সংখ্যা positive, negative না zero চেক করো
-
-
 // তিনটি সংখ্যার গড় (average) বের করো
 
 
@@ -40,24 +34,31 @@
 // console.log(result)
 
 // একটি সংখ্যা even না odd চেক করো
-const oddOreven = (int) => {
-  if (!Number.isInteger(int)) return 'Invalid Number';
-  return int % 2 === 0 ? "Even Number" : "Odd Number";
-}
-const result = oddOreven(1);
-console.log(result)
+// const oddOreven = (int) => {
+//   if (!Number.isInteger(int)) return 'Invalid Number';
+//   return int % 2 === 0 ? "Even Number" : "Odd Number";
+// }
+// const result = oddOreven(1);
+// console.log(result)
 
 
-// একটি সংখ্যা positive, negative না zero চেক করো
-const numberType = (value) => {
-  let num = value;
-  if (typeof value === "string") {
-    num = Number(value);
-  }
-  if (typeof num !== "number" || !Number.isFinite(num)) return "Invalid";
-  if (num < 0) return "Negative Number";
-  if (num > 0) return "Positive Number";
-  return "Zero";
-};
+// // একটি সংখ্যা positive, negative না zero চেক করো
+// const numberType = (value) => {
+//   let num = value;
+//   if (typeof value === "string") {
+//     num = Number(value);
+//   }
+//   if (typeof num !== "number" || !Number.isFinite(num)) return "Invalid";
+//   if (num < 0) return "Negative Number";
+//   if (num > 0) return "Positive Number";
+//   return "Zero";
+// };
 
-console.log(numberType("-13")); // Negative Number
+// console.log(numberType("-13")); // Negative Number
+
+// তিনটি সংখ্যার গড় (average) বের করো
+// const aveRage = (avg1, avg2, avg3) => {
+//   return totalavrg= (avg1 + avg2 + avg3) / aveRage.length;
+// }
+// const result = aveRage(20,30,30);
+// console.log(Math.round(result));
