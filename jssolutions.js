@@ -1,14 +1,7 @@
 // 🔢 A. Math & Basic Logic (1–8)
 
 
-
 //
-
-
-// Rectangle এর area বের করো
-
-
-// একটি সংখ্যা 3 এবং 5 উভয় দিয়ে divisible কিনা চেক করো
 
 
 
@@ -41,7 +34,7 @@
 // console.log(result)
 
 
-// // একটি সংখ্যা positive, negative না zero চেক করো
+// একটি সংখ্যা positive, negative না zero চেক করো
 // const numberType = (value) => {
 //   let num = value;
 //   if (typeof value === "string") {
@@ -78,3 +71,12 @@
 // }
 
 // console.log(calculateRectangle(10, 5)); // { area: 50, perimeter: 30 }
+
+// একটি সংখ্যা 3 এবং 5 উভয় দিয়ে divisible কিনা চেক করো
+const isDivisible = (num) => {
+  if (typeof num !== "number" || !Number.isFinite(num)) return "Invalid input";
+  return num % 3 === 0 && num % 5 === 0 ? "is-divisible" : "not-divisible";
+};
+
+const result = isDivisible(30);
+console.log(result);
