@@ -50,7 +50,10 @@ console.log(result)
 
 // একটি সংখ্যা positive, negative না zero চেক করো
 const numberType = (value) => {
-  const num = typeof value === "string" ? Number(value) : value;
+  let num = value;
+  if (typeof value === "string") {
+    num = Number(value);
+  }
   if (typeof num !== "number" || !Number.isFinite(num)) return "Invalid";
   if (num < 0) return "Negative Number";
   if (num > 0) return "Positive Number";
