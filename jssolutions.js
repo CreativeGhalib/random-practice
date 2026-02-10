@@ -1,9 +1,8 @@
 // 🔢 A. Math & Basic Logic (1–8)
 
-// তিনটি সংখ্যার গড় (average) বের করো
 
 
-// Celsius থেকে Fahrenheit convert করো
+//
 
 
 // Rectangle এর area বের করো
@@ -62,3 +61,20 @@
 // }
 // const result = aveRage(20,30,30);
 // console.log(Math.round(result));
+
+// Celsius থেকে Fahrenheit convert করো
+// const convertTer = celsius =>
+//   typeof celsius === 'number' ? `Temperature is ${(celsius * 9) / 5 + 32} F` : 'Invalid input';
+
+// console.log(convertTer(10));
+
+
+// Rectangle এর area বের করো
+// Area and Perimeter Calculation
+// function calculateRectangle(length, width) {
+//     const area = length * width;
+//     const perimeter = 2 * (length + width);
+//     return { area, perimeter };
+// }
+
+// console.log(calculateRectangle(10, 5)); // { area: 50, perimeter: 30 }
