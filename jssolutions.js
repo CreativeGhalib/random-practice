@@ -1,13 +1,6 @@
 // 🔢 A. Math & Basic Logic (1–8)
 
 
-//
-
-
-
-// দুটি সংখ্যা যোগ করার একটি প্রোগ্রাম লেখো
-
-
 // function doSum(a, b) {
 //   return a + b;
 // }
@@ -73,10 +66,18 @@
 // console.log(calculateRectangle(10, 5)); // { area: 50, perimeter: 30 }
 
 // একটি সংখ্যা 3 এবং 5 উভয় দিয়ে divisible কিনা চেক করো
-const isDivisible = (num) => {
-  if (typeof num !== "number" || !Number.isFinite(num)) return "Invalid input";
-  return num % 3 === 0 && num % 5 === 0 ? "is-divisible" : "not-divisible";
-};
+// const isDivisible = (num) => {
+//   if (typeof num !== "number" || !Number.isFinite(num)) return "Invalid input";
+//   return num % 3 === 0 && num % 5 === 0 ? "is-divisible" : "not-divisible";
+// };
 
-const result = isDivisible(30);
-console.log(result);
+// const result = isDivisible(30);
+// console.log(result);
+
+// দুটি সংখ্যা যোগ করার একটি প্রোগ্রাম লেখো
+const sum = (num1, num2) => {
+  if (typeof num1 !== 'number' || typeof num2 !== 'number' || !Number.isFinite(num1) || !Number.isFinite(num2)) return "Invalid"
+    return num1 + num2;
+}
+const result = sum(12, 14);
+console.log(result)
