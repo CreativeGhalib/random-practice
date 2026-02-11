@@ -88,16 +88,6 @@
 // 📦 B. Variable & Data Type (9–13)
 
 
-// একটি ভ্যারিয়েবলের type চেক করো (typeof)
-
-
-// string কে number এ convert করো
-
-
-// number কে string এ convert করো
-
-
-
 // let, const, var দিয়ে একই ভ্যারিয়েবল declare করে পার্থক্য দেখাও
 // if (true) {
 //   var a = 1;
@@ -124,8 +114,24 @@
 // console.log(obj);
 
 // একটি ভ্যারিয়েবলের type চেক করো (typeof)
-const typeOfvariable = (variAble) => {
-  let result = (typeof variAble)? return result
-}
-const res = typeOfvariable(12);
-console.log(res)
+// const typeOfvariable = (variAble) => {
+//   let result = (typeof variAble)? return result
+// }
+// const res = typeOfvariable(12);
+// console.log(res)
+
+// // string কে number এ convert করো
+// const str = "123";
+// console.log(Number(str))
+
+
+// // number কে string এ convert করো
+// const num = 123;
+// console.log(String(num));     // "123"
+// console.log(num.toString()); // "123"
+
+// NaN কিভাবে তৈরি হয় তার উদাহরণ দেখাও
+// let name = NaN;
+// // console.log(Number(name))
+// let res = Number.isNaN(name);
+// console.log(res)
