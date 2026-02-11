@@ -86,7 +86,6 @@
 
 
 // 📦 B. Variable & Data Type (9–13)
-// let, const, var দিয়ে একই ভ্যারিয়েবল declare করে পার্থক্য দেখাও
 
 
 // একটি ভ্যারিয়েবলের type চেক করো (typeof)
@@ -98,8 +97,35 @@
 // number কে string এ convert করো
 
 
-// NaN কিভাবে তৈরি হয় তার উদাহরণ দেখাও
+
+// let, const, var দিয়ে একই ভ্যারিয়েবল declare করে পার্থক্য দেখাও
+// if (true) {
+//   var a = 1;
+//   let b = 2;
+//   const c = 3;
+// }
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// var x = 10;
+// var x = 20;
+
+// let y = 10;
+// let y = 20;
+
+// const z = 10;
+// const z = 20;
 
 
 
+// const obj = { n: 1 };
+// obj.n = 2;
+// console.log(obj);
 
+// একটি ভ্যারিয়েবলের type চেক করো (typeof)
+const typeOfvariable = (variAble) => {
+  let result = (typeof variAble)? return result
+}
+const res = typeOfvariable(12);
+console.log(res)
