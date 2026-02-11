@@ -135,3 +135,37 @@
 // // console.log(Number(name))
 // let res = Number.isNaN(name);
 // console.log(res)
+
+// 🔀 C. Conditionals (14–20)
+// বয়স দিয়ে vote দিতে পারবে কিনা চেক করো
+// const voterOrnot = age => {
+//   return age >= 18 ? 'You can vote' : 'You cant vote';
+
+// }
+// let result = voterOrnot(18);
+// console.log(result)
+
+
+// একটি সংখ্যা বড় না ছোট 100 থেকে চেক করো
+// const bigOrsmall = num => {
+//   return num > 100 ? "Bigger than 100" : (num === 100 ? "Equal to 100" : "Smaller than 100");
+
+// }
+// let res = bigOrsmall(100);
+// console.log(res)
+
+
+
+// Student এর mark দিয়ে grade বের করো
+
+
+// Leap year চেক করার প্রোগ্রাম লেখো
+
+
+// তিনটি সংখ্যার মধ্যে সবচেয়ে বড়টা বের করো
+
+
+// Login system বানাও (email && password চেক)
+
+
+// Ternary operator দিয়ে even/odd চেক করো
