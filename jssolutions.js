@@ -177,46 +177,157 @@
 // বছরটা ৪ দিয়ে ভাগ যায় হতে হবে
 // কিন্তু ১০০ দিয়ে ভাগ গেলে leap year না
 // তবে ৪০০ দিয়ে ভাগ গেলে আবার leap year
-const yearIsleap = year => {
-  return (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0))
-  ? "Year is Leap year"
-  : "Not Leap Year";
-}
-console.log(yearIsleap(2013))
+// const yearIsleap = year => {
+//   return (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0))
+//   ? "Year is Leap year"
+//   : "Not Leap Year";
+// }
+// console.log(yearIsleap(2013))
 
 
 // তিনটি সংখ্যার মধ্যে সবচেয়ে বড়টা বের করো
-const biggestOfThree = (a, b, c) => {
-  if (![a, b, c].every(Number.isFinite)) return "Invalid input";
+// const biggestOfThree = (a, b, c) => {
+//   if (![a, b, c].every(Number.isFinite)) return "Invalid input";
 
-  let max = a;
-  if (b > max) max = b;
-  if (c > max) max = c;
-  return max;
-};
+//   let max = a;
+//   if (b > max) max = b;
+//   if (c > max) max = c;
+//   return max;
+// };
 
-console.log(biggestOfThree(10, 25, 7));
+// console.log(biggestOfThree(10, 25, 7));
 
 
 // Login system বানাও (email && password চেক)
-const loginSystem = (email, password) => {
-  if (typeof email !== "string" || typeof password !== "string") return "Invalid input";
+// const loginSystem = (email, password) => {
+//   if (typeof email !== "string" || typeof password !== "string") return "Invalid input";
 
-  const normalizedEmail = email.trim().toLowerCase();
-  const savedEmail = "test@example.com";
-  const savedPassword = "123456";
+//   const normalizedEmail = email.trim().toLowerCase();
+//   const savedEmail = "test@example.com";
+//   const savedPassword = "123456";
 
-  if (!normalizedEmail || !password) return "Email and password required";
-  if (!normalizedEmail.includes("@") || !normalizedEmail.includes(".")) return "Invalid email";
+//   if (!normalizedEmail || !password) return "Email and password required";
+//   if (!normalizedEmail.includes("@") || !normalizedEmail.includes(".")) return "Invalid email";
 
-  return normalizedEmail === savedEmail && password === savedPassword
-    ? "Login successful"
-    : "Invalid credentials";
-};
+//   return normalizedEmail === savedEmail && password === savedPassword
+//     ? "Login successful"
+//     : "Invalid credentials";
+// };
 
 
 
 // Ternary operator দিয়ে even/odd চেক করো
-const evenOrodd = number => {
-  return number % 2 === 0 ? "Number is even" : "Number is odd";
-}
+// const evenOrodd = number => {
+//   return number % 2 === 0 ? "Number is even" : "Number is odd";
+// }
+// 1 থেকে 10 পর্যন্ত সংখ্যা print করো
+
+// for (let i = 0; i <= 10; i++){
+//   console.log(i)
+// };
+
+
+
+// // 1 থেকে 50 পর্যন্ত even সংখ্যা print করো
+// for (let i = 50; i <= 100; i++){
+//   console.log(i)
+// }
+
+
+// 10 থেকে 1 পর্যন্ত reverse loop চালাও
+// for (let i = 10; i > 0; i--){
+//   console.log(i)
+// }
+
+
+// একটি সংখ্যার নামতা print করো
+// let j = 1;
+// for (let i = 0; i <= 10; i++){
+
+//  console.log(j*i);
+// }
+
+
+
+// 1–100 এর মধ্যে 3 দিয়ে divisible সংখ্যা বের করো
+// for (let i = 1; i <= 100; i++){
+//   if (i % 3===0) {
+//     console.log(i)
+//   }
+// }
+
+
+// loop ব্যবহার করে sum বের করো
+// let sum = 0;
+// for (let i = 0; i <= 5; i++){
+//   sum = sum + i;
+
+// }
+// console.log(sum)
+
+
+// break ব্যবহার করে loop থামাও
+// for (let i = 0; i <= 10; i++){
+//   if (i === 5) break;
+//   console.log(i)
+// }
+
+
+// 📚 E. Arrays (28–36)
+// একটি array তৈরি করে সব element print করো
+// let numbers = [12, 10, 4, 2, 8];
+
+// for (let i = 0; i < numbers.length; i++) console.log(i, numbers[i]);
+
+// let x = (numbers[0] = 13);
+// console.log('x =', x);
+
+// for (let i = 0; i < numbers.length; i++) console.log(i, numbers[i]);
+let numbers = [12, 10, 4, 2, 8];
+// console.log(numbers.length);
+// setting/updating number from a array  using index
+// numbers[1] = 12;
+// console.log(numbers)
+// console.log(numbers.indexOf(4))
+// console.log(numbers.includes(2))
+// console.log(Array.isArray(numbers));
+// console.log(numbers.toString())
+
+
+// const numbers = [12, 10, 4, 2, 8];
+// // numbers.forEach((n, i) => console.log(i, n));
+// const doubled = numbers.map(n => n);
+// console.log(doubled)
+
+
+
+
+
+
+
+
+
+
+
+// array এর length বের করো
+
+
+// array থেকে প্রথম ও শেষ element বের করো
+
+
+// array এর সব সংখ্যার যোগফল বের করো
+
+
+// array থেকে even সংখ্যাগুলো বের করো
+
+
+// array এর মধ্যে largest number বের করো
+
+
+// array reverse করো
+
+
+// array sort করো (numeric)
+
+
+// array থেকে duplicate remove করো
