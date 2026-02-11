@@ -157,15 +157,66 @@
 
 
 // Student এর mark দিয়ে grade বের করো
+// const gradeCalculator = number => {
+//   return number >= 80 && number <= 100 ? "A+"
+//     : number >= 70 ? "A"
+//       : number >= 60 ? "A-"
+//         : number >= 50 ? "B"
+//           : number >= 40 ? "C"
+//             : number >= 33 ? "D"
+//               : "F"
+// }
+// const res = gradeCalculator(100);
+// console.log(res)
+
 
 
 // Leap year চেক করার প্রোগ্রাম লেখো
+// Leap year বের করার শর্ত (Gregorian calendar):
+
+// বছরটা ৪ দিয়ে ভাগ যায় হতে হবে
+// কিন্তু ১০০ দিয়ে ভাগ গেলে leap year না
+// তবে ৪০০ দিয়ে ভাগ গেলে আবার leap year
+const yearIsleap = year => {
+  return (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0))
+  ? "Year is Leap year"
+  : "Not Leap Year";
+}
+console.log(yearIsleap(2013))
 
 
 // তিনটি সংখ্যার মধ্যে সবচেয়ে বড়টা বের করো
+const biggestOfThree = (a, b, c) => {
+  if (![a, b, c].every(Number.isFinite)) return "Invalid input";
+
+  let max = a;
+  if (b > max) max = b;
+  if (c > max) max = c;
+  return max;
+};
+
+console.log(biggestOfThree(10, 25, 7));
 
 
 // Login system বানাও (email && password চেক)
+const loginSystem = (email, password) => {
+  if (typeof email !== "string" || typeof password !== "string") return "Invalid input";
+
+  const normalizedEmail = email.trim().toLowerCase();
+  const savedEmail = "test@example.com";
+  const savedPassword = "123456";
+
+  if (!normalizedEmail || !password) return "Email and password required";
+  if (!normalizedEmail.includes("@") || !normalizedEmail.includes(".")) return "Invalid email";
+
+  return normalizedEmail === savedEmail && password === savedPassword
+    ? "Login successful"
+    : "Invalid credentials";
+};
+
 
 
 // Ternary operator দিয়ে even/odd চেক করো
+const evenOrodd = number => {
+  return number % 2 === 0 ? "Number is even" : "Number is odd";
+}
