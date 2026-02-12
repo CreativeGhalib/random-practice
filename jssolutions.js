@@ -331,3 +331,23 @@ let numbers = [12, 10, 4, 2, 8];
 
 
 // array থেকে duplicate remove করো
+
+
+function todayDate() {
+  let d = new Date();
+
+  let day = d.getDate();
+  let month = d.getMonth() + 1;
+  let year = d.getFullYear();
+
+  if (day < 10) {
+    day = '0' + day;
+  }
+
+  if (month < 10) {
+    month = '0' + month;
+  }
+
+  return day + '-' + month + '-' + year;
+}
+console.log(todayDate(12));
