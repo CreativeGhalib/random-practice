@@ -360,16 +360,27 @@ let numbers = [12, 10, 4, 2, 8];
 // today.getHours();     // ঘণ্টা
 // today.getMinutes();   // মিনিট
 
-let baseuser = {
-  role: 'viewer',
-  canComment: true,
-};
-let user1 = Object.create(baseuser);
-user1.name = 'rafi';
-user1.canComment = false;
-user1.role = 'restricted';
-let user2 = Object.create(baseuser);
-user2.name = "Tania";
-user2.role = "admin";
-console.log(user1);
-console.log(user2)
+
+// New way
+// let baseuser = {
+//   role: 'viewer',
+//   canComment: true,
+// };
+// let user1 = Object.create(baseuser);
+// user1.name = 'rafi';
+// user1.canComment = false;
+// user1.role = 'restricted';
+// let user2 = Object.create(baseuser);
+// user2.name = "Tania";
+// user2.role = "admin";
+// console.log(user1);
+// console.log(user2)
+
+
+// old way
+function perSon(name, age) {
+  this.name = name;
+  this.age = age
+}
+let result = new perSon("mesbah", 38);
+console.log(result)
