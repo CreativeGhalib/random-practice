@@ -283,7 +283,7 @@
 // console.log('x =', x);
 
 // for (let i = 0; i < numbers.length; i++) console.log(i, numbers[i]);
-let numbers = [12, 10, 4, 2, 8];
+// let numbers = [12, 10, 4, 2, 8];
 // console.log(numbers.length);
 // setting/updating number from a array  using index
 // numbers[1] = 12;
@@ -385,6 +385,23 @@ let numbers = [12, 10, 4, 2, 8];
 // let result = new perSon("mesbah", 38);
 // console.log(result)
 
-let obj = Object.create({});
-obj.name = "ghalib"
-console.log(obj)
+// let obj = Object.create({});
+// obj.name = "ghalib";
+// obj['isMarried'] = true;
+// console.log(typeof obj.isMarried);
+
+// console.log(obj);
+const mobile = {
+  brand: 'samsung',
+  price: 55000,
+  storage: '64gb',
+  camera: '12mp',
+  isNew: true,
+};
+
+mobile['age'] = 12;
+
+for (const prop in mobile) {
+  // console.log(prop);
+  console.log(mobile[prop]);
+}
