@@ -333,21 +333,43 @@ let numbers = [12, 10, 4, 2, 8];
 // array থেকে duplicate remove করো
 
 
-function todayDate() {
-  let d = new Date();
+// function todayDate() {
+//   let d = new Date();
 
-  let day = d.getDate();
-  let month = d.getMonth() + 1;
-  let year = d.getFullYear();
+//   let day = d.getDate();
+//   let month = d.getMonth() + 1;
+//   let year = d.getFullYear();
 
-  if (day < 10) {
-    day = '0' + day;
-  }
+//   if (day < 10) {
+//     day = '0' + day;
+//   }
 
-  if (month < 10) {
-    month = '0' + month;
-  }
+//   if (month < 10) {
+//     month = '0' + month;
+//   }
 
-  return day + '-' + month + '-' + year;
-}
-console.log(todayDate(12));
+//   return day + '-' + month + '-' + year;
+// }
+// console.log(todayDate(12));
+
+// let today = new Date();
+
+// today.getFullYear();  // বছর (যেমন 2026)
+// today.getMonth();     // মাস (0=Jan, 1=Feb...) ⚠️
+// today.getDate();      // মাসের দিন (1-31)
+// today.getHours();     // ঘণ্টা
+// today.getMinutes();   // মিনিট
+
+let baseuser = {
+  role: 'viewer',
+  canComment: true,
+};
+let user1 = Object.create(baseuser);
+user1.name = 'rafi';
+user1.canComment = false;
+user1.role = 'restricted';
+let user2 = Object.create(baseuser);
+user2.name = "Tania";
+user2.role = "admin";
+console.log(user1);
+console.log(user2)
