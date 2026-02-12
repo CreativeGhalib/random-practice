@@ -378,9 +378,13 @@ let numbers = [12, 10, 4, 2, 8];
 
 
 // old way
-function perSon(name, age) {
-  this.name = name;
-  this.age = age
-}
-let result = new perSon("mesbah", 38);
-console.log(result)
+// function perSon(name, age) {
+//   this.name = name;
+//   this.age = age
+// }
+// let result = new perSon("mesbah", 38);
+// console.log(result)
+
+let obj = Object.create({});
+obj.name = "ghalib"
+console.log(obj)
