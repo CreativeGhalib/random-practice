@@ -546,24 +546,88 @@
 
 
 // string reverse করো
-let str = "mesbah ghalib";
-let newStr = "";
+// let str = "mesbah ghalib";
+// let newStr = "";
 
-for (let i = str.length - 1; i >= 0; i--) {
-  newStr += str[i];
-}
+// for (let i = str.length - 1; i >= 0; i--) {
+//   newStr += str[i];
+// }
 
-console.log(newStr); // "bilahg hbahsem"
+// console.log(newStr); // "bilahg hbahsem"
 
 // string palindrome কিনা চেক করো
-function isPalindrome(str) {
-  let rev = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    rev += str[i];
-  }
-  return str === rev;
+// function isPalindrome(str) {
+//   let rev = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     rev += str[i];
+//   }
+//   return str === rev;
+// }
+
+// console.log(isPalindrome("madam")); // true
+// console.log(isPalindrome("hello")); // false
+
+
+// 🧱 G. Objects (43–47)
+// একটি object তৈরি করো student info দিয়ে
+let stdInfo = {
+  name: "karim",
+  age: 26,
+  isSrudent:true
 }
+console.log(stdInfo)
 
-console.log(isPalindrome("madam")); // true
-console.log(isPalindrome("hello")); // false
 
+// object থেকে সব key print করো
+
+
+// object এর সব value print করো
+
+
+// object এর মধ্যে নির্দিষ্ট property আছে কিনা চেক করো
+
+
+// object এর উপর loop চালাও
+
+
+
+// 🧩 H. Functions (48–55)
+// দুটি সংখ্যার যোগফল বের করার function লেখো
+
+
+// even/odd চেক করার function লেখো
+
+
+// array এর সব সংখ্যার sum বের করার function লেখো
+
+
+// string reverse করার function লেখো
+
+
+// leap year check function লেখো
+
+
+// array থেকে largest number বের করার function লেখো
+
+
+// unit convert করার function লেখো (inch → feet)
+
+
+// calculator function বানাও (add, sub, mul, div)
+
+
+
+// ⭐ Bonus Challenges (56–60)
+// array এর average বের করো
+
+
+// array থেকে শুধু unique value রাখো
+
+
+// object এর ভিতরে nested object access করো
+
+
+// function এর ভিতরে function ব্যবহার করো
+
+
+// user input validate করো (number কিনা চেক)
