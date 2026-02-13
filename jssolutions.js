@@ -335,21 +335,55 @@
 
 // array থেকে even সংখ্যাগুলো বের করো
 let numbers = [1, 2, 3, 4, 5];
-for (const number of numbers) {
-  const num = number;
-  let result =if (num % 2 === 0) {
-    console.log(result)
-  }
+const evenNumbers = [];
+for (const num of numbers) {
+  if (num % 2 === 0) evenNumbers.push(num);
 }
+console.log(evenNumbers);
 
 
 // array এর মধ্যে largest number বের করো
+let largest = numbers[0];
+for (const num of numbers) {
+  if (num > largest)
+    largest = num;
+}
+console.log(largest);
 
 
 // array reverse করো
+// let reversedArray = [];
+// for (const num of numbers) {
+//   reversedArray.unshift(num);
+//   console.log(reversedArray)
+// }
+// const numbers = [1, 2, 3, 4, 5];
+// let reversedArray = [];
+
+// for (let i = numbers.length - 1; i >= 0; i--) {
+//   reversedArray.push(numbers[i]);
+// }
+// console.log(reversedArray);
+
 
 
 // array sort করো (numeric)
+// const persons = ['akib', 'dakib', 'bodi', 'nakib'];
+// // `sort()` is the normal method. For strings, use `localeCompare`.
+// const sortedPersons = [...persons].sort((a, b) => b.localeCompare(a));
+// console.log(sortedPersons);//for string
+
+
+//for numbers it will be
+const persons = [1, 2 ,3 ,12,14];
+// const sortedPersons = persons.sort();
+// console.log(sortedPersons) //but its a old method,
+const sortedPersons = [...persons].sort(function (a,b){return b-a});
+console.log(sortedPersons) // i
+
+
+
+
 
 
 // array থেকে duplicate remove করো
