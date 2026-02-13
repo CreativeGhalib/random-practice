@@ -515,3 +515,55 @@
 //   reversedArray.unshift(num);
 // }
 // console.log(reversedArray);
+
+// একটি string এর length বের করো
+// let str = "ghalib";
+// const length = str.length;
+// console.log(length)
+
+
+
+// string কে uppercase করো
+// let str = 'ghalib';
+// const toupperCase = str.toUpperCase();
+// console.log(toupperCase);
+
+
+// string এর মধ্যে নির্দিষ্ট word আছে কিনা চেক করো
+// let str = 'mesbah ghalib';
+// for (let i = 0; i < str.length; i++){
+//   console.log(str[i])
+// }
+// let specificWord = str.includes("mesbah");
+// console.log(specificWord)
+
+
+
+// একটি sentence থেকে সব word আলাদা করো
+// let str = 'my name is mesbah ghalib';
+// let splitedWord = str.split(" ");
+// console.log(splitedWord)
+
+
+// string reverse করো
+let str = "mesbah ghalib";
+let newStr = "";
+
+for (let i = str.length - 1; i >= 0; i--) {
+  newStr += str[i];
+}
+
+console.log(newStr); // "bilahg hbahsem"
+
+// string palindrome কিনা চেক করো
+function isPalindrome(str) {
+  let rev = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    rev += str[i];
+  }
+  return str === rev;
+}
+
+console.log(isPalindrome("madam")); // true
+console.log(isPalindrome("hello")); // false
+
