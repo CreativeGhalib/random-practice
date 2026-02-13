@@ -315,17 +315,32 @@
 
 
 // array থেকে প্রথম ও শেষ element বের করো
-const arr = [1, 2, 3, 4, 5]
-const firstItem = arr.shift();
-const lastItem = arr.pop();
-console.log(firstItem);
-console.log(lastItem)
+// const arr = [1, 2, 3, 4, 5]
+// const firstItem = arr.shift();
+// const lastItem = arr.pop();
+// console.log(firstItem);
+// console.log(lastItem)
 
 
 // array এর সব সংখ্যার যোগফল বের করো
+// let arr = [1, 2, 3, 4, 5];
+// let sum = 0;
+// for (const e of arr) {
+
+//    sum = sum + e;
+
+// }
+// console.log(sum)
 
 
 // array থেকে even সংখ্যাগুলো বের করো
+let numbers = [1, 2, 3, 4, 5];
+for (const number of numbers) {
+  const num = number;
+  let result =if (num % 2 === 0) {
+    console.log(result)
+  }
+}
 
 
 // array এর মধ্যে largest number বের করো
