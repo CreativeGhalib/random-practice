@@ -310,9 +310,16 @@
 
 
 // array এর length বের করো
+// let arr = [112, 11, 13, 14, 15];
+// console.log(arr.length)
 
 
 // array থেকে প্রথম ও শেষ element বের করো
+const arr = [1, 2, 3, 4, 5]
+const firstItem = arr.shift();
+const lastItem = arr.pop();
+console.log(firstItem);
+console.log(lastItem)
 
 
 // array এর সব সংখ্যার যোগফল বের করো
@@ -391,17 +398,17 @@
 // console.log(typeof obj.isMarried);
 
 // console.log(obj);
-const mobile = {
-  brand: 'samsung',
-  price: 55000,
-  storage: '64gb',
-  camera: '12mp',
-  isNew: true,
-};
+// const mobile = {
+//   brand: 'samsung',
+//   price: 55000,
+//   storage: '64gb',
+//   camera: '12mp',
+//   isNew: true,
+// };
 
-mobile['age'] = 12;
+// mobile['age'] = 12;
 
-for (const prop in mobile) {
-  // console.log(prop);
-  console.log(mobile[prop]);
-}
+// for (const prop in mobile) {
+//   // console.log(prop);
+//   console.log(mobile[prop]);
+// }
