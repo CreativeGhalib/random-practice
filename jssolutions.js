@@ -334,21 +334,21 @@
 
 
 // array থেকে even সংখ্যাগুলো বের করো
-let numbers = [1, 2, 3, 4, 5];
-const evenNumbers = [];
-for (const num of numbers) {
-  if (num % 2 === 0) evenNumbers.push(num);
-}
-console.log(evenNumbers);
+// let numbers = [1, 2, 3, 4, 5];
+// const evenNumbers = [];
+// for (const num of numbers) {
+//   if (num % 2 === 0) evenNumbers.push(num);
+// }
+// console.log(evenNumbers);
 
 
 // array এর মধ্যে largest number বের করো
-let largest = numbers[0];
-for (const num of numbers) {
-  if (num > largest)
-    largest = num;
-}
-console.log(largest);
+// let largest = numbers[0];
+// for (const num of numbers) {
+//   if (num > largest)
+//     largest = num;
+// }
+// console.log(largest);
 
 
 // array reverse করো
@@ -375,19 +375,21 @@ console.log(largest);
 
 
 //for numbers it will be
-const persons = [1, 2 ,3 ,12,14];
+// const persons = [1, 2 ,3 ,12,14];
 // const sortedPersons = persons.sort();
 // console.log(sortedPersons) //but its a old method,
-const sortedPersons = [...persons].sort(function (a,b){return b-a});
-console.log(sortedPersons) // i
-
-
-
-
+// const sortedPersons = [...persons].sort(function (a,b){return b-a});
+// console.log(sortedPersons) // i
 
 
 // array থেকে duplicate remove করো
 
+
+
+// array থেকে duplicate remove করো
+// const dupNumbers = [1, 2, 2, 3, 4, 4, 5, 5, 5];
+// const uniqueNumbers = [...new Set(dupNumbers)];
+// console.log(uniqueNumbers);
 
 // function todayDate() {
 //   let d = new Date();
@@ -461,3 +463,55 @@ console.log(sortedPersons) // i
 //   // console.log(prop);
 //   console.log(mobile[prop]);
 // }
+
+// //remove duplicates in sorted array.
+// let dupArr = [1, 2, 3, 4, 1, 3];
+// dupArr.sort((a, b) => a - b); // must be sorted first!! boring !!
+
+// let i = 0; //last unique index
+// for (let j = 1; j < dupArr.length; j++) {
+//   if (dupArr[j] !== dupArr[i]) {
+//     i++;
+//     dupArr[i] = dupArr[j];
+//      console.log(dupArr);
+//   }
+
+// }
+
+// const uniqueSorted = dupArr.slice(0, i + 1);
+// console.log(uniqueSorted);
+
+// const arr = [1, 2, 2, 3, 4, 4, 5];
+// const unique = [];
+
+// for (const n of arr) {
+//   if (unique.includes(n)) continue;
+//   unique.push(n);
+// }
+
+// console.log(unique); // [1,2,3,4,5]
+// array থেকে even সংখ্যাগুলো বের করো
+// let arr= [1, 2, 3, 4, 5];
+// const evenNumbers = [];
+// for (const num of arr) {
+//   if (num % 2 === 0) evenNumbers.push(num);
+// }
+// console.log(evenNumbers);
+
+
+// array এর মধ্যে largest number বের করো
+// let numbers = [1, 2, 3, 4, 5];
+// let largest = numbers[0];
+// for (const num of numbers) {
+//   if (num > largest)
+//     largest = num;
+// }
+// console.log(largest);
+
+
+// array reverse করো
+// let reversedArray = [];
+// for (const num of numbers) {
+//   reversedArray.unshift(num);
+// }
+// console.log(reversedArray);
