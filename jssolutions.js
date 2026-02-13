@@ -570,24 +570,61 @@
 
 // 🧱 G. Objects (43–47)
 // একটি object তৈরি করো student info দিয়ে
-let stdInfo = {
-  name: "karim",
-  age: 26,
-  isSrudent:true
-}
-console.log(stdInfo)
+// let stdInfo = {
+//   name: "karim",
+//   age: 26,
+//   isSrudent:true
+// }
+// console.log(stdInfo)
 
 
 // object থেকে সব key print করো
-
-
 // object এর সব value print করো
+// let stdInfo = {
+//   name: 'karim',
+//   age: 26,
+//   isSrudent: true,
+// };
+// for (const info in stdInfo) {
+//   console.log(info, stdInfo[info]);
+//   console.log(info);
+//   console.log(Object.keys(stdInfo));
+
+// }
+
+
+
+
 
 
 // object এর মধ্যে নির্দিষ্ট property আছে কিনা চেক করো
+// let stdInfo = {
+//   name: 'karim',
+//   age: 26,
+//   isSrudent: true,
+// };
+// console.log(stdInfo.hasOwnProperty("name")); // true
+// let stdInfo = {
+//   name: 'karim',
+//   age: 26,
+//   isSrudent: true,
+// };
+
+// console.log("age" in stdInfo); // true
+// console.log("cgpa" in stdInfo); // false
+
+
 
 
 // object এর উপর loop চালাও
+let stdInfo = {
+  name: 'karim',
+  age: 26,
+  isSrudent: true,
+};
+for (const info in stdInfo) {
+  console.log(info)
+}
 
 
 
