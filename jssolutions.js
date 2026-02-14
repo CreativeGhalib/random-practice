@@ -617,15 +617,19 @@
 
 
 // object এর উপর loop চালাও
-let stdInfo = {
-  name: 'karim',
-  age: 26,
-  isSrudent: true,
-};
-for (const info in stdInfo) {
-  console.log(info)
-}
-
+// let stdInfo = {
+//   name: 'karim',
+//   age: 26,
+//   isSrudent: true,
+// };
+// for (const info in stdInfo) {
+//   console.log(info)
+// }
+//
+// array reverse
+// const arr = [1, 2, 3, 4, 5];
+// let newArr = [...arr].reverse();
+// console.log(newArr)
 
 
 // 🧩 H. Functions (48–55)
