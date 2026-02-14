@@ -643,10 +643,16 @@
 
 // 🧩 H. Functions (48–55)
 // দুটি সংখ্যার যোগফল বের করার function লেখো
-
+// function add(a, b) {
+//   return a + b;
+// }
+// console.log(add(1,2))
 
 // even/odd চেক করার function লেখো
-
+ const evenOrodd=function(number){
+  return number % 2 === 0 ? "Even Number" : "Odd number";
+}
+console.log(evenOrodd(''))
 
 // array এর সব সংখ্যার sum বের করার function লেখো
 
