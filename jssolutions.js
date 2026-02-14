@@ -649,12 +649,29 @@
 // console.log(add(1,2))
 
 // even/odd চেক করার function লেখো
- const evenOrodd=function(number){
-  return number % 2 === 0 ? "Even Number" : "Odd number";
-}
-console.log(evenOrodd(''))
+//  const evenOrodd=function(number){
+//   return number % 2 === 0 ? "Even Number" : "Odd number";
+// }
+// console.log(evenOrodd(''))
 
 // array এর সব সংখ্যার sum বের করার function লেখো
+// const arr = [1, 2, 3, 4, 5];
+
+// const totalSum = (numbers) => {
+//   let sum = 0;
+//   for (const n of numbers) sum += n;
+//   return sum;
+// };
+
+// console.log(totalSum(arr)); // 15
+const arr = [1, 2, 3, 4, 5];
+
+const totalSum = (numbers) => numbers.reduce((acc, n) => acc + n, 0);
+
+console.log(totalSum(arr)); // 15
+
+
+
 
 
 // string reverse করার function লেখো
