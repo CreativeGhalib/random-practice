@@ -77,11 +77,70 @@ console.log(concatenated);
 
 
 
-const statement = 'I am a hard working person';
-const words = statement.split(' ');
-const reversedWords = [];
-for (let i = words.length - 1; i >= 0; i--) {
-  reversedWords.push(words[i]);
+// const statement = 'I am a hard working person';
+// const words = statement.split(' ');
+// const reversedWords = [];
+// for (let i = words.length - 1; i >= 0; i--) {
+//   reversedWords.push(words[i]);
+// }
+// const reversedStatement = reversedWords.join(' ');
+// console.log(reversedStatement);
+
+// Task 5
+// Copy the given array into another array so that changing the copy does not affect the original.Change the first element of the copied array to 99.
+
+// Input: [1, 2, 3]
+
+// Expected Output:
+
+// Original: [1, 2, 3] Copy: [99, 2, 3]
+
+// const original = [1, 2, 3];
+// const copied = [...original];
+// copied[0] = 99;
+// console.log(`Original: [${original.join(', ')}] Copy: [${copied.join(', ')}]`);
+
+
+// Task 6
+// Given an array of student objects, print each student’s name and marks.
+
+// [
+//   { name: "John", marks: 85 },
+//   { name: "Alice", marks: 90 }
+// ]
+// Expected ooutput:
+// John scored 85
+// Alice scored 90
+// Task 7
+// Given a 2D array, update the value at second row first item to 99 and print the updated array.
+
+// input:
+
+// [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6]
+// ]
+// Expected Array:
+
+// [
+//   [1, 2],
+//   [99, 4],
+//   [5, 6]
+// ]
+
+const students = [
+  { name: 'John', marks: 85 },
+  { name: 'Alice', marks: 90 },
+];
+for (const student of students) {
+  console.log(`${student.name} scored ${student.marks}`);
 }
-const reversedStatement = reversedWords.join(' ');
-console.log(reversedStatement);
+
+const matrix = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
+matrix[1][0] = 99;
+console.log(matrix);
