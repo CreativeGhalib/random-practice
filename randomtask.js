@@ -157,3 +157,11 @@
   console.log('P18', grouped);
 }
 
+
+// Problem-19: Pick only some properties from an object.
+{
+  const product = { id: 9, name: 'Pen', price: 2.5, stock: 100 };
+  const pick = (({ id, price }) => ({ id, price }))(product);
+  console.log('P19', pick);
+}
+
