@@ -110,3 +110,11 @@
   console.log('P13', freq);
 }
 
+
+// Problem-14: Invert keys and values (assume values are unique strings).
+{
+  const countryCodes = { US: 'United States', CA: 'Canada' };
+  const inverted = Object.fromEntries(Object.entries(countryCodes).map(([k, v]) => [v, k]));
+  console.log('P14', inverted);
+}
+
