@@ -56,3 +56,16 @@
   console.log('P07', topSubject);
 }
 
+
+// Problem-08: Add a method that uses `this` to compute a derived value.
+{
+  const rect = {
+    w: 5,
+    h: 3,
+    area() {
+      return this.w * this.h;
+    },
+  };
+  console.log('P08', rect.area());
+}
+
