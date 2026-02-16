@@ -48,3 +48,11 @@
   console.log('P06', pairs);
 }
 
+
+// Problem-07: Find the key with the highest numeric value.
+{
+  const marks = { math: 86, english: 92, physics: 88 };
+  const topSubject = Object.entries(marks).reduce((best, cur) => (cur[1] > best[1] ? cur : best))[0];
+  console.log('P07', topSubject);
+}
+
