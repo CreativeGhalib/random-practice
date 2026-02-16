@@ -23,3 +23,11 @@
   console.log('P03', settings);
 }
 
+
+// Problem-04: Delete a property from an object.
+{
+  const cartItem = { id: 7, name: 'Book', coupon: 'SAVE10' };
+  delete cartItem.coupon;
+  console.log('P04', cartItem);
+}
+
