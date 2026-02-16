@@ -15,3 +15,11 @@
   console.log('P02', email);
 }
 
+
+// Problem-03: Update an existing property value.
+{
+  const settings = { theme: 'light', fontSize: 14 };
+  settings.theme = 'dark';
+  console.log('P03', settings);
+}
+
