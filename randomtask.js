@@ -118,3 +118,11 @@
   console.log('P14', inverted);
 }
 
+
+// Problem-15: Safely read a deeply nested value using optional chaining.
+{
+  const data = { a: { b: null } };
+  const value = data.a?.b?.c ?? 'missing';
+  console.log('P15', value);
+}
+
