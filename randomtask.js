@@ -77,3 +77,11 @@
   console.log('P09', task);
 }
 
+
+// Problem-10: Destructure object properties with a default value.
+{
+  const config = { retries: 3 };
+  const { retries, timeoutMs = 5000 } = config;
+  console.log('P10', { retries, timeoutMs });
+}
+
