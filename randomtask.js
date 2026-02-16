@@ -31,3 +31,12 @@
   console.log('P04', cartItem);
 }
 
+
+// Problem-05: Check if an object has an own property (not inherited).
+{
+  const obj = Object.create({ inherited: true });
+  obj.own = 123;
+  const hasOwn = Object.prototype.hasOwnProperty.call(obj, 'own');
+  console.log('P05', hasOwn);
+}
+
