@@ -134,3 +134,14 @@
   console.log('P16', canChange);
 }
 
+
+// Problem-17: Convert an array of objects into an id->object map.
+{
+  const users = [
+    { id: 1, name: 'Ava' },
+    { id: 2, name: 'Noah' },
+  ];
+  const byId = Object.fromEntries(users.map((u) => [u.id, u]));
+  console.log('P17', byId);
+}
+
