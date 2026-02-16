@@ -94,3 +94,11 @@
   console.log('P11', merged);
 }
 
+
+// Problem-12: Create a shallow clone and prove the original is unchanged.
+{
+  const original = { a: 1, b: 2 };
+  const clone = { ...original, b: 99 };
+  console.log('P12', { original, clone });
+}
+
