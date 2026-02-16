@@ -69,3 +69,11 @@
   console.log('P08', rect.area());
 }
 
+
+// Problem-09: Use a computed property name to create a dynamic key.
+{
+  const key = 'status';
+  const task = { id: 1, [key]: 'done' };
+  console.log('P09', task);
+}
+
