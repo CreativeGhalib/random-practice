@@ -145,3 +145,15 @@
   console.log('P17', byId);
 }
 
+
+// Problem-18: Group objects by a property into an object of arrays.
+{
+  const orders = [
+    { id: 1, status: 'paid' },
+    { id: 2, status: 'pending' },
+    { id: 3, status: 'paid' },
+  ];
+  const grouped = orders.reduce((acc, o) => ((acc[o.status] ??= []).push(o), acc), {});
+  console.log('P18', grouped);
+}
+
