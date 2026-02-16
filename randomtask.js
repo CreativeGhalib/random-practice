@@ -102,3 +102,11 @@
   console.log('P12', { original, clone });
 }
 
+
+// Problem-13: Count frequencies in an array using an object.
+{
+  const items = ['a', 'b', 'a', 'c', 'b', 'a'];
+  const freq = items.reduce((acc, item) => ((acc[item] = (acc[item] ?? 0) + 1), acc), {});
+  console.log('P13', freq);
+}
+
