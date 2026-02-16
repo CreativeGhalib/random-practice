@@ -7,3 +7,11 @@
   console.log('P01', person);
 }
 
+
+// Problem-02: Read a value from a nested object using a path.
+{
+  const user = { profile: { contact: { email: 'ava@example.com' } } };
+  const email = user.profile.contact.email;
+  console.log('P02', email);
+}
+
