@@ -85,3 +85,12 @@
   console.log('P10', { retries, timeoutMs });
 }
 
+
+// Problem-11: Merge two objects (later keys override earlier keys).
+{
+  const base = { host: 'localhost', port: 3000 };
+  const override = { port: 8080 };
+  const merged = { ...base, ...override };
+  console.log('P11', merged);
+}
+
