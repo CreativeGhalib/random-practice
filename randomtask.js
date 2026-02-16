@@ -126,3 +126,11 @@
   console.log('P15', value);
 }
 
+
+// Problem-16: Freeze an object so properties can’t be changed.
+{
+  const constants = Object.freeze({ PI: 3.14159 });
+  const canChange = Object.isFrozen(constants) && constants.PI === 3.14159;
+  console.log('P16', canChange);
+}
+
