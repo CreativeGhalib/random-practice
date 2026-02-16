@@ -40,3 +40,11 @@
   console.log('P05', hasOwn);
 }
 
+
+// Problem-06: Iterate over an object and build an array of "key:value" strings.
+{
+  const scores = { a: 10, b: 20, c: 15 };
+  const pairs = Object.entries(scores).map(([k, v]) => `${k}:${v}`);
+  console.log('P06', pairs);
+}
+
