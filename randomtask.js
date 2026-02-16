@@ -165,3 +165,11 @@
   console.log('P19', pick);
 }
 
+
+// Problem-20: Omit properties from an object (return the rest).
+{
+  const profile = { id: 3, name: 'Ava', password: 'secret', token: 'abc' };
+  const { password, token, ...safeProfile } = profile;
+  console.log('P20', safeProfile);
+}
+
